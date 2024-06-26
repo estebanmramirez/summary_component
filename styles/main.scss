@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+$light_red: hsl(0, 100%, 67%);
+$orange_yellow: hsl(39, 100%, 56%);
+$green_teal: hsl(166, 100%, 37%);
+$cobalt_blue: hsl(234, 85%, 45%);
+$slate_blue: hsl(252, 100%, 67%);
+$royal_blue: hsl(241, 81%, 54%);
+$violet_blue: hsla(256, 72%, 46%, 1);
+$persian_blue: hsla(241, 72%, 46%, 0);
+$white: hsl(0, 0%, 100%);
+$pale_blue: hsl(221, 100%, 96%);
+$light_lavender: hsl(241, 100%, 89%);
+$gray_blue: hsl(224, 30%, 27%);
+$font: "Hanken Grotesk", sans-serif;
+
+
+@media (max-width: 480px) {
+    .main {
+        background-color: $royal_blue;
+        width: 100%;
+        height: 370px;
+        border-bottom-left-radius: 15%;
+        border-bottom-right-radius: 15%;
+        .main_title {
+            color: $light_lavender;
+            padding-top: 30px;
+            font: {
+                family: $font;
+                size: 16px;
+            }
+            text-align: center;
+        }
+        .circle {
+            background-color: $violet_blue;
+            width: 35%;
+            height: 145px;
+            border-radius: 50%;
+            margin: 20px auto auto auto;
+            .circle_number {
+                font-family: $font;
+                color: $white;
+                font-size: 50px;
+                text-align: center;
+                height: auto;
+                padding-top: 25px;
+            }
+            .circle_subnumber {
+                font-family: $font;
+                text-align: center;
+                color: $light_lavender;
+                font-size: 16px;
+                margin-top: 15px;
+            }
+        } 
+
+        h2 {
+            margin-top: 20px;
+            font: {
+                family: $font;
+                size: 26px;
+                weight: bolder;
+            }
+            color: $white;
+            text-align: center;
+        }
+        .subtitle {
+            color: $light_lavender;
+            font-family: $font;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+    } /*aqui termina el main*/
+
+} /* cierra el media screen
+
+

@@ -1,17 +1,231 @@
-/* Error: expected more input.
- *    ,
- * 79 | } /* cierra el media screen
- *    |                            ^
- *    '
- *   styles\main.scss 79:28  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected more input.\a    \2577 \a 79 \2502  } /* cierra el media screen\d\a    \2502                             ^\a    \2575 \a   styles\\main.scss 79:28  root stylesheet";
+* {
+  margin: 0px;
+  padding: 0px;
 }
+
+@media (max-width: 480px) {
+  .main {
+    background-color: hsl(241, 81%, 54%);
+    width: 100%;
+    height: 370px;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+  }
+  .main .main_title {
+    color: hsl(241, 100%, 89%);
+    padding-top: 30px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 16px;
+    text-align: center;
+  }
+  .main .circle {
+    background-color: hsl(256, 72%, 46%);
+    background-image: linear-gradient(hsl(256, 72%, 46%), hsl(241, 81%, 54%));
+    width: 35%;
+    height: 145px;
+    border-radius: 50%;
+    margin: 20px auto auto auto;
+  }
+  .main .circle .circle_number {
+    font-family: "Hanken Grotesk", sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 50px;
+    text-align: center;
+    height: auto;
+    padding-top: 25px;
+  }
+  .main .circle .circle_subnumber {
+    font-family: "Hanken Grotesk", sans-serif;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .main h2 {
+    margin-top: 20px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 26px;
+    font-weight: bolder;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+  }
+  .main .subtitle {
+    color: hsl(241, 100%, 89%);
+    font-family: "Hanken Grotesk", sans-serif;
+    text-align: center;
+    margin-top: 15px;
+  }
+  /*aqui termina el main*/
+  .container {
+    margin: 30px 40px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: bolder;
+    /* aqui cierra la clase item_1 */
+  }
+  .container .item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: papayawhip;
+  }
+  .container .item div {
+    display: flex;
+    gap: 15px;
+    align-self: center;
+  }
+  .container .item div img {
+    height: 25px;
+    align-self: center;
+    margin-left: 5px;
+  }
+  .container .item div p {
+    font-size: 18px;
+    align-self: center;
+  }
+  .container .item p {
+    margin: 20px 0;
+  }
+  .container .item span {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  .container .item div {
+    display: flex;
+    gap: 15px;
+    align-self: center;
+  }
+  .container .item div img {
+    height: 25px;
+    align-self: center;
+    margin-left: 5px;
+  }
+  .container .item div p {
+    color: hsl(0, 100%, 67%);
+  }
+  .container .item p {
+    margin: 20px 0;
+  }
+  .container .item span {
+    color: hsl(241, 100%, 89%);
+  }
+  .container .item_2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgb(229, 240, 112);
+  }
+  .container .item_2 div {
+    display: flex;
+    gap: 15px;
+    align-self: center;
+  }
+  .container .item_2 div img {
+    height: 25px;
+    align-self: center;
+    margin-left: 5px;
+  }
+  .container .item_2 div p {
+    font-size: 18px;
+    align-self: center;
+  }
+  .container .item_2 p {
+    margin: 20px 0;
+  }
+  .container .item_2 span {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  .container .item_2 div p {
+    color: orange;
+  }
+  .container span {
+    color: hsl(221, 100%, 96%);
+  }
+  .container .item_3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgb(158, 245, 158);
+  }
+  .container .item_3 div {
+    display: flex;
+    gap: 15px;
+    align-self: center;
+  }
+  .container .item_3 div img {
+    height: 25px;
+    align-self: center;
+    margin-left: 5px;
+  }
+  .container .item_3 div p {
+    font-size: 18px;
+    align-self: center;
+  }
+  .container .item_3 p {
+    margin: 20px 0;
+  }
+  .container .item_3 span {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  .container .item_3 div p {
+    color: hsl(166, 100%, 37%);
+  }
+  .container span {
+    color: hsl(221, 100%, 96%);
+  }
+  .container .item_4 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgb(201, 201, 235);
+  }
+  .container .item_4 div {
+    display: flex;
+    gap: 15px;
+    align-self: center;
+  }
+  .container .item_4 div img {
+    height: 25px;
+    align-self: center;
+    margin-left: 5px;
+  }
+  .container .item_4 div p {
+    font-size: 18px;
+    align-self: center;
+  }
+  .container .item_4 p {
+    margin: 20px 0;
+  }
+  .container .item_4 span {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  .container .item_4 div p {
+    color: hsl(241, 81%, 54%);
+  }
+  .container span {
+    color: hsl(221, 100%, 96%);
+  }
+  .container button {
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    margin: 30px auto;
+    width: 100%;
+    border: none;
+    height: 60px;
+    border-radius: 30px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  /* aqui cierra la etiqueta container*/
+} /* cierra el media screen*//*# sourceMappingURL=main.css.map */

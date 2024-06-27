@@ -17,6 +17,35 @@ $light_lavender: hsl(241, 100%, 89%);
 $gray_blue: hsl(224, 30%, 27%);
 $font: "Hanken Grotesk", sans-serif;
 
+@mixin items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 60px;
+    border-radius: 10px;
+    div{
+        display: flex;
+        gap: 15px;
+        align-self: center;
+        img {
+            height: 25px;
+            align-self: center;
+            margin-left: 5px;
+        }
+        p {
+            font-size: 18px;
+            align-self: center;
+        }
+    }
+    p {
+        margin: 20px 0;
+    }
+    span {
+    font-size: 18px;
+    margin-right: 5px;
+    }
+}
+
 
 @media (max-width: 480px) {
     .main {
@@ -36,6 +65,7 @@ $font: "Hanken Grotesk", sans-serif;
         }
         .circle {
             background-color: $violet_blue;
+            background-image: linear-gradient($violet_blue, $royal_blue);
             width: 35%;
             height: 145px;
             border-radius: 50%;
@@ -56,7 +86,6 @@ $font: "Hanken Grotesk", sans-serif;
                 margin-top: 15px;
             }
         } 
-
         h2 {
             margin-top: 20px;
             font: {
@@ -76,6 +105,98 @@ $font: "Hanken Grotesk", sans-serif;
 
     } /*aqui termina el main*/
 
-} /* cierra el media screen
+
+    .container {
+        margin: 30px 40px;
+        font: {
+            family: $font;
+            weight: bolder;
+        }
+
+        .item {
+            @include items;
+            background-color: papayawhip;
+
+            div{
+                display: flex;
+                gap: 15px;
+                align-self: center;
+                img {
+                    height: 25px;
+                    align-self: center;
+                    margin-left: 5px;
+                }
+
+                p {
+                    color: $light_red;
+                }
+            }
+
+            p {
+                margin: 20px 0;
+            }
+
+            span {
+            color: $light_lavender;
+            }
+
+        } /* aqui cierra la clase item_1 */
+
+        .item_2 {
+            @include items;
+            background-color: rgb(229, 240, 112);
+
+            div p {
+                color: orange;
+            }
+        }
+        span {
+            color: $pale_blue;
+        }
+
+        .item_3 {
+            @include items;
+            background-color: rgb(158, 245, 158);
+
+            div p {
+                color: $green_teal;
+            }
+        }
+
+        span {
+            color: $pale_blue;
+        }
+
+        .item_4 {
+            @include items;
+            background-color: rgb(201, 201, 235);
+
+            div p {
+                color: $royal_blue;
+            }
+        }
+
+        span {
+            color: $pale_blue;
+        }
+
+        button {
+            background-color: $gray_blue;
+            color: $white;
+            margin: 30px auto;
+            width: 100%;
+            border: none;
+            height: 60px;
+            border-radius: 30px;
+            font-family: $font;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+    } /* aqui cierra la etiqueta container*/
+
+
+   
+} /* cierra el media screen*/
 
 
